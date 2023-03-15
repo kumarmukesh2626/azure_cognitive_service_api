@@ -148,10 +148,10 @@ if __name__ == '__main__':
             
         elif config_value["API"]["API_instance"] == "DEBUG":
             success_log("running API in development mode", "200", "__main__")
-            app.run(host="0.0.0.0", port=5000, debug=True)
+            app.run(host="0.0.0.0")
         else:
             success_log("running API in testing mode. debug is off.", "200", "__main__")
-            app.run(host="0.0.0.0", port=5000, debug=True)
+            app.run(host="0.0.0.0")
     except Exception as e:
         print(e)
         error_log("Flask api initalization failed.", "500", "__main__")
