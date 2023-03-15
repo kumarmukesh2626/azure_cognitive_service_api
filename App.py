@@ -16,7 +16,7 @@ from PIL import Image
 import numpy as np
 import io
 import torch
-from waitress import serve
+# from waitress import serve
 from flask_cors import CORS
 from flask import Flask, jsonify, request
 import time
@@ -139,12 +139,12 @@ if __name__ == '__main__':
         if config_value["API"]["API_instance"] == "PROD":
             success_log("running API in production mode.", "200", "__main__")
             print("API Is Running")
-            video_capture = CameraLoader("config/cam_config.ini")
-            video_capture.start()
-            video_thread = threading.Thread(target=send_video_frames, args=(video_capture, test_batch_url))
+            # video_capture = CameraLoader("config/cam_config.ini")
+            # video_capture.start()
+            # video_thread = threading.Thread(target=send_video_frames, args=(video_capture, test_batch_url))
             # Start the thread
-            video_thread.start()
-            serve(app, port=5001)
+            # video_thread.start()
+            app.run(host="0.0.0.0")
             
         elif config_value["API"]["API_instance"] == "DEBUG":
             success_log("running API in development mode", "200", "__main__")
