@@ -32,7 +32,7 @@ config_Url = configparser.ConfigParser()
 config_Url.read("config/common_config.ini")
 test_batch_url = config_Url["configuration"]["test_batch_url"]
 
-
+#####
 def stringToRGB(base64_string):
     try:
         imgdata = base64.b64decode(str(base64_string))
