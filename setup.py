@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.1"
 
-REPO_NAME = "testing_CI"
+REPO_NAME = "azure_cognitive_service_api"
 AUTHOR_USER_NAME = "kumarmukesh2626"
-SRC_REPO = "testing_CI"
+SRC_REPO = "azure_cognitive_service_api"
 AUTHOR_EMAIL = "mukesh.kumar@algo8.ai"
 
 setuptools.setup(

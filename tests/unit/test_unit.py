@@ -30,13 +30,13 @@ class TestCameraLoader():
     
 
 # #     # Test case for starting the frame capture thread
-#     def test_start(self):
-#         # Initialize the CameraLoader with a valid configuration file path
-#         loader = CameraLoader("src/config/cam_config.ini")
-#         # Start the frame capture thread
-#         loader.start()
-#         # Check that the thread has started
-#         assert loader.stopped == False
+    def test_start(self):
+        # Initialize the CameraLoader with a valid configuration file path
+        loader = CameraLoader("src/config/cam_config.ini")
+        # Start the frame capture thread
+        loader.start()
+        # Check that the thread has started
+        assert loader.stopped == False
 
 #     # Test case for stopping the frame capture thread
     def test_stop(self):
