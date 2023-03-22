@@ -15,19 +15,15 @@ API based approach to run models on images.
 from PIL import Image
 import numpy as np
 import io
-import torch
 # from waitress import serve
 from flask_cors import CORS
 from flask import Flask, jsonify, request
 import time
-import threading
 import cv2
-import base64
 import configparser
+import base64
 import requests
 from logs.config import success_log, error_log
-from cameraLoader.getframes import send_video_frames
-from cameraLoader.getlatestframes import CameraLoader
 
 config_Url = configparser.ConfigParser()
 config_Url.read("config/common_config.ini")
