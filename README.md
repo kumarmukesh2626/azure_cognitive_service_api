@@ -1,1 +1,1 @@
-# This is a Testing  Modules for continous integration will integrate it with CD
+# This is a  Modules for continous integration for Azure Cognitive Service API
